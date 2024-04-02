@@ -101,37 +101,29 @@
   <span class="hidden bottom-2 rtl:pl-24 ltr:pr-24 md:grid-cols-3"></span>
 </footer>
 
- <script>
-    // Get the button element
-    var scrollToTopButton = document.getElementById('scrollToTop');
-    function myFunction2() {
-      let sus= document.getElementById('sus');
-      console.log('lkak', sus);
+<script>
+  // Get the button element
+  var scrollToTopButton = document.getElementById('scrollToTop');
+  function myFunction2() {
+    let sus= document.getElementById('sus');
+    console.log('lkak', sus);
+  }
+
+  // Add a scroll event listener
+  window.addEventListener('scroll', function () {
+    if (window.scrollY >= 751) {
+      scrollToTopButton.style.display = 'flex';
+    } else {
+      scrollToTopButton.style.display = 'none';
     }
+  });
 
-    // Add a scroll event listener
-    window.addEventListener('scroll', function() {
-      // Calculate the scroll percentage
-      // var scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-      // console.log('scrollPercentage', scrollPercentage);
-      // console.log('window.scrollY', window.scrollY);
-      // console.log('document.documentElement.scrollHeight', document.documentElement.scrollHeight);
-      // console.log('windows.innerHeight', window.innerHeight);
-
-      // Toggle the visibility based on the scroll position
-      if (window.scrollY >=750) {
-        scrollToTopButton.style.display = 'flex';
-      } else {
-        scrollToTopButton.style.display = 'none';
-      }
+  // Function to scroll to the top when the button is clicked
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      duration: 5000,
+      behavior: 'smooth'
     });
-
-    // Function to scroll to the top when the button is clicked
-    function scrollToTop() {
-      window.scrollTo({
-        top: 0,
-        duration: 5000,
-        behavior: 'smooth'
-      });
-    }
-  </script>
+  }
+</script>
