@@ -1436,6 +1436,13 @@
                     "icon": "sicon-format-text"
                 }
             ]
+        },
+        {
+            "key": "f2e4197b-046d-4e65-aa82-2ce0ab58d5ae",
+            "title": "salesAd",
+            "icon": "sicon-store",
+            "path": "home.salesAd",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",
