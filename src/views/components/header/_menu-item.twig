@@ -1,5 +1,5 @@
 {# MOBILE #}
-<li class="lg:hidden text-sm font-bold" {{ menu.attrs }}>
+<li class="lg:hidden text-sm font-bold text-black" {{ menu.attrs }}>
     {% set item_image %}
       {% if menu.image %}
         <img src="{{ menu.image }}" class="rounded-full" width="48" height="48" alt="{{ menu.title }}"/>  
@@ -9,7 +9,7 @@
     {% if not menu.has_children %}
       <a {{ menu.link_attrs|raw }} aria-label="{{menu.title ? menu.title : 'category'}}" href="{{ menu.url }}" class="text-gray-500 {{ menu.image ? '!py-3' : '' }}">
           {{ item_image }}
-          <span>{{ menu.title }}</span>
+          <span class="text-black">{{ menu.title }}</span>
       </a>
     {% else %}
       <span class="{{ menu.image ? '!py-3' : '' }}">

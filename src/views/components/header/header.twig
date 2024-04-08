@@ -7,31 +7,6 @@
         class="h-[10.7rem] md:h-[10rem] lg:h-[12rem] w-[100vw] top-0 absolute z-30 bg-black rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-100 rounde-lg"
 ></div>
 <header class="flex flex-col z-50 h-[10rem] md:h-[9rem] lg:h-[12rem] mt-0 " id="main-header">
-    <section
-            id="headerTop"
-            class="flex justify-between items-center border-b border-white h-[2.6rem] w-[100vw]"
-    >
-        <div class="rtl:mr-[7%] ltr:ml[7%] flex h-fit">
-            <div class="header-buttons rtl:mr-5 ltr:ml-5">
-                {% if store.settings.is_multilingual or store.currencies_enabled %}
-                    <button
-                            type="button"
-                            onclick="salla.event.dispatch(`localization::open`)"
-                            class="rounded-xl px-3 basis-0 flex items-center font-[600]"
-                    >
-          <span class=" items-center text-white rlt:flex-row ltr:flex-row-reverse">
-            <i class="icon sicon-earth rtl:ml-1 mt-1.5"></i>
-            <span class="font-normal">{{ trans('blocks.langAndCurrency.langCurr') }}</span>
-          </span>
-                    </button>
-                    <salla-localization-modal></salla-localization-modal>
-                {% endif %}
-            </div>
-        </div>
-        <div class="rtl:ml-[7%] ltr:mr-[7%] flex text-white">
-            {% component 'footer.contacts' with {is_header:true} %}
-        </div>
-    </section>
     <section class="grid grid-cols-12 mt-3 h-[5rem]">
         <div class="col-span-4 flex items-center flex-nowrap w-full rtl:mr-[5%] ltr:ml-5%">
             <a
