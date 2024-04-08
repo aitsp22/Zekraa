@@ -1,0 +1,41 @@
+<div class="z-[99999999999999999999999] fixed top-0 left-[10%] h-auto bg-black">
+  <div id="salesAd" class="relative">
+    <ul class="flex items-center text-white gap-10">
+        <li>
+            <a href="{{link('offers')}}">تخفيضات</a>
+        </li>
+        <li>
+            <a href="{{link('offers')}}">تخفيضات</a>
+        </li>
+        <li>
+            <a href="{{link('offers')}}">تخفيضات</a>
+        </li>
+        <li>
+            <a href="{{link('offers')}}">تخفيضات</a>
+        </li>
+        <li>
+            <a href="{{link('offers')}}">تخفيضات</a>
+        </li>
+    </ul>
+    <!-- Closing button -->
+    <button id="closeButton" class="absolute top-0 right-0 bg-white border-none cursor-pointer">
+        <div class="w-full h-0 border border-black"></div>
+        <div class="w-full h-0 border border-black"></div>
+    </button>
+  </div>
+</div>
+
+<script>
+    // Get the elements
+var salesAdContainer = document.getElementById("salesAdContainer");
+var closeButton = document.getElementById("closeButton");
+
+// Function to close the sales ad
+function closeSalesAd() {
+  salesAdContainer.style.display = "none";
+}
+
+// Add click event listener to close button
+closeButton.addEventListener("click", closeSalesAd);
+
+</script>
