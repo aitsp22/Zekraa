@@ -1377,11 +1377,50 @@
                             "searchable": true,
                             "required": false,
                             "value": []
+                        },
+                        {
+                            "id": "all_categorires.string",
+                            "type": "string",
+                            "format": "text",
+                            "label": "cat suptitle",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": 30
                         }
                     ],
                     "value": [],
                     "minLength": 1,
                     "maxLength": "20"
+                },
+                {
+                    "id": "cat_title",
+                    "type": "string",
+                    "format": "text",
+                    "label": "cat title",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "Placeholder text ..",
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 6,
+                    "maxLength": 30
+                },
+                {
+                    "id": "title",
+                    "type": "static",
+                    "format": "title",
+                    "label": "Title",
+                    "value": null,
+                    "variant": "h1",
+                    "icon": "sicon-format-text"
                 }
             ]
         },
