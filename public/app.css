@@ -871,6 +871,7 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .\!text-danger{--tw-text-opacity:1 !important;color:rgba(174, 10, 10, 1) !important;color:rgba(174, 10, 10, var(--tw-text-opacity)) !important}
 .\!text-primary{color:#414042 !important;color:var(--color-primary) !important}
 .\!text-white{--tw-text-opacity:1 !important;color:rgba(255, 255, 255, 1) !important;color:rgba(255, 255, 255, var(--tw-text-opacity)) !important}
+.text-\[\#DBAB71\]{--tw-text-opacity:1;color:rgba(219, 171, 113, 1);color:rgba(219, 171, 113, var(--tw-text-opacity))}
 .text-\[\#c37d48\]{--tw-text-opacity:1;color:rgba(195, 125, 72, 1);color:rgba(195, 125, 72, var(--tw-text-opacity))}
 .text-amber-400{--tw-text-opacity:1;color:rgba(251, 191, 36, 1);color:rgba(251, 191, 36, var(--tw-text-opacity))}
 .text-black{--tw-text-opacity:1;color:rgba(0, 0, 0, 1);color:rgba(0, 0, 0, var(--tw-text-opacity))}
@@ -4314,7 +4315,7 @@ input[type=radio].sr-only:checked ~ div#nav-cart span {
 .footer-is-light .store-footer .social-link{--tw-border-opacity:1;border-color:rgba(209, 213, 219, 1);border-color:rgba(209, 213, 219, var(--tw-border-opacity))}
 .footer-is-light .store-footer .contact-social{--tw-border-opacity:1;border-color:rgba(243, 244, 246, 1);border-color:rgba(243, 244, 246, var(--tw-border-opacity))}
 .copyright-text p{--tw-text-opacity:1;color:rgba(55, 65, 81, 1);color:rgba(55, 65, 81, var(--tw-text-opacity))}
-.main-menu > li > a[href*=offer]{--tw-text-opacity:1;color:rgba(255, 255, 255, 1);color:rgba(255, 255, 255, var(--tw-text-opacity))}
+.main-menu > li > a[href*=offer]{--tw-text-opacity:1;color:rgba(219, 171, 113, 1);color:rgba(219, 171, 113, var(--tw-text-opacity))}
 @media only screen and (min-width: 1024px) {
   .main-menu{margin-left:1.5rem;margin-right:1.5rem;display:none;flex-wrap:wrap;align-items:center;padding-top:2rem;padding-bottom:0px}
   @media (min-width: 1024px){
@@ -4323,7 +4324,7 @@ input[type=radio].sr-only:checked ~ div#nav-cart span {
     padding-top: 0;
     padding-bottom: 0;
   }
-  .main-menu li > a{display:flex;align-items:center;justify-content:space-between;padding:0.75rem;font-size:0.9rem;font-weight:400;--tw-text-opacity:1;color:rgba(255, 255, 255, 1);color:rgba(255, 255, 255, var(--tw-text-opacity));transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:300ms}
+  .main-menu li > a{display:flex;align-items:center;justify-content:space-between;padding:0.75rem;font-size:0.9rem;font-weight:400;--tw-text-opacity:1;color:rgba(219, 171, 113, 1);color:rgba(219, 171, 113, var(--tw-text-opacity));transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:300ms}
   .main-menu li > a:hover{text-decoration-line:none}
   .main-menu li.root-level{display:inline-block}
   .main-menu li.root-level > a{padding-top:0px;padding-bottom:2rem;font-weight:700}
@@ -6686,8 +6687,7 @@ button.swiper-pagination-bullet {
 .lg\:flex{display:flex}
 .lg\:grid{display:grid}
 .lg\:hidden{display:none}
-.lg\:h-\[12rem\]{height:12rem}
-.lg\:h-auto{height:auto}
+.lg\:h-\[9rem\]{height:9rem}
 .lg\:w-10\/12{width:83.333333%}
 .lg\:w-24{width:6rem}
 .lg\:w-5\/12{width:41.666667%}

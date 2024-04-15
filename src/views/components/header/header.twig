@@ -4,9 +4,9 @@
 "١٠٠ ر.س" | #}
 <div
         id="backBlur"
-        class="h-[10.7rem] md:h-[10rem] lg:h-[12rem] w-[100vw] top-0 absolute z-30 bg-black rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-100 rounde-lg"
+        class="h-[10.7rem] md:h-[10rem] lg:h-[9rem] w-[100vw] top-0 absolute z-30 bg-black rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-100 rounde-lg"
 ></div>
-<header class="flex flex-col z-50 h-[10rem] md:h-[9rem] lg:h-[12rem] mt-0 " id="main-header">
+<header class="flex flex-col z-50 h-[10rem] md:h-[9rem] lg:h-[9rem] mt-0 " id="main-header">
     <section class="grid grid-cols-12 mt-3 h-[5rem]">
         <div class="col-span-4 flex items-center flex-nowrap w-full rtl:mr-[5%] ltr:ml-5%">
             <a
@@ -33,7 +33,7 @@
                         onclick="salla.event.dispatch('search::open')"
                         class="search-btn"
                 >
-                    <span class="sicon-search text-white text-md md:text-2xl"></span>
+                    <span class="sicon-search text-[#DBAB71] text-md md:text-2xl"></span>
                 </button>
                 <div class="header-search flex-1">
                     <salla-search-modal inline oval height="36"></salla-search-modal>
@@ -47,14 +47,14 @@
                         style="cursor: pointer !important"
                         onclick="salla.event.dispatch('login::open')"
                 >
-                    <i class="icon sicon-user text-white text-md md:text-2xl"></i>
+                    <i class="icon sicon-user text-[#DBAB71] text-md md:text-2xl"></i>
                 </a>
             {% endif %}
             <salla-cart-summary class="rtl:mr-2 ltr:ml-2 white">
                 <i
                         slot="icon"
                         class="icon sicon-cart text-md md:text-2xl leading-none"
-                        style="color: white !important"
+                        style="color: #DBAB71 !important"
                 ></i>
             </salla-cart-summary>
         </div>
