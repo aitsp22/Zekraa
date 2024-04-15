@@ -1472,7 +1472,50 @@
             "title": "salesAd",
             "icon": "sicon-store",
             "path": "home.salesAd",
-            "fields": []
+            "fields": [
+                {
+                    "id": "collection",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "Collection",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "collection.show_sales_ads",
+                            "type": "boolean",
+                            "format": "checkbox",
+                            "label": "show sales ads",
+                            "description": null,
+                            "labelHTML": null,
+                            "icon": "sicon-check-square",
+                            "value": true,
+                            "selected": false,
+                            "required": false
+                        },
+                        {
+                            "id": "collection.ad_text",
+                            "type": "string",
+                            "format": "text",
+                            "label": "Ad text",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": 30
+                        }
+                    ],
+                    "value": [],
+                    "minLength": 1,
+                    "maxLength": 5
+                }
+            ]
         }
     ],
     "support_url": "https://example.com",
