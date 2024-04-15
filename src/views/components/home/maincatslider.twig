@@ -7,7 +7,11 @@
     >
       <a
         href="{{ component.category[0].url }}"
-        class="no-underline w-[6rem] h-10 border border-white bg-black rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 hover:scale-110 transition-transform duration-300 ease-in-out rounde-lg flex justify-center items-center"
+        class="no-underline w-[6rem] h-10 border border-white 
+        bg-black rounded-md bg-clip-padding backdrop-filter 
+        text-black
+        backdrop-blur-md bg-opacity-20 hover:scale-110 transition-transform 
+        duration-300 ease-in-out rounde-lg flex justify-center items-center"
       >
       {{trans('blocks.hoome.showAll')}}
       </a>
@@ -29,7 +33,7 @@
       limit="20"
       autoplay
       display-all-url=""
-      block-title="{{ component.category[0].name }}"
+      {# block-title="{{ component.category[0].name }}" #}
       block-subtitle=""
       slider-id="slider-with-bg-5"
     >
