@@ -1,6 +1,6 @@
-<section class="relative overflow-hidden h-[44rem] sm:h-[47rem] md:h-[50rem]" >
-  <div class="slider-bg">
-    <img src="{{ component.bgImg }}" class="w-[100vw] h-[67vh] relative" />
+<section class="  relative  lg:h-auto  sm:h-[47rem] md:h-[45rem] mb-[20px]" >
+  <div class="">
+    <img src="{{ component.bgImg }}" class="w-[100vw] h-[50vh]  relative" />
 
     <div
       class="absolute top-10 rtl:left-10 ltr:right-10 text-white w-fit justify-center items-center"
@@ -15,16 +15,16 @@
   </div>
   
 
-  <br />
+
   <div
-    class="container px-16 relative overflow-hidden"
-    style="margin-top: 1%; top: -300px"
+    class=" p-[10px] "
+  
   >
     <salla-products-slider
       source="categories"
       source-value="{{ component.category[0].id }}"
       show-controls="false"
-      style="color: white; height: 50%"
+      style="color: black; height: 50%"
       class="s-products-slider-wrapper hydrated"
       limit="20"
       autoplay
@@ -36,4 +36,5 @@
      
     </salla-products-slider>
   </div>
+  
 </section>
