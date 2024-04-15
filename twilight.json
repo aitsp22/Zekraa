@@ -1379,10 +1379,25 @@
                             "value": []
                         },
                         {
-                            "id": "all_categorires.string",
+                            "id": "all_categorires.cat_suptitle",
                             "type": "string",
                             "format": "text",
                             "label": "cat suptitle",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": 30
+                        },
+                        {
+                            "id": "all_categorires.cat_title",
+                            "type": "string",
+                            "format": "text",
+                            "label": "cat title",
                             "description": null,
                             "labelHTML": null,
                             "placeholder": "Placeholder text ..",
@@ -1397,30 +1412,6 @@
                     "value": [],
                     "minLength": 1,
                     "maxLength": "20"
-                },
-                {
-                    "id": "cat_title",
-                    "type": "string",
-                    "format": "text",
-                    "label": "cat title",
-                    "description": null,
-                    "labelHTML": null,
-                    "placeholder": "Placeholder text ..",
-                    "icon": "sicon-format-text-alt",
-                    "value": null,
-                    "multilanguage": false,
-                    "required": false,
-                    "minLength": 6,
-                    "maxLength": 30
-                },
-                {
-                    "id": "title",
-                    "type": "static",
-                    "format": "title",
-                    "label": "Title",
-                    "value": null,
-                    "variant": "h1",
-                    "icon": "sicon-format-text"
                 }
             ]
         },

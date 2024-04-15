@@ -1,6 +1,6 @@
 // Main Menu
 .main-menu > li > a[href*="offer"]{
-  @apply text-white
+  @apply text-[#DBAB71]
 }
 
 @media only screen and (min-width: 1024px) {
@@ -14,7 +14,7 @@
 
     li{
       > a{
-        @apply flex justify-between items-center font-normal transition duration-300 p-3 text-[0.9rem] hover:no-underline text-white; 
+        @apply flex justify-between items-center font-normal transition duration-300 p-3 text-[0.9rem] hover:no-underline text-[#DBAB71]; 
       }
 
       &.root-level{
