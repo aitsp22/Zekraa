@@ -1,12 +1,72 @@
 
-<div
+{# <div
   id="scrollToTop"
   style="z-index: 99999999999"
   onclick="scrollToTop()"
   class="bg-white cursor-pointer w-[3rem] h-[3rem] hover:scale-125 rounded-full fixed bottom-[5rem] rtl:left-5 ltr:left-5 hidden justify-center hover:bg-black transition-all duration-500 ease-in-out items-center border-black hover:border-white border-2"
 >
   <i class="icon sicon-arrow-up text-[#c37d48] text-xl"></i>
-</div>
+</div> #}
+
+<style>
+/* Initial styling for the SVG */
+#scrollToTop {
+    background-color: black; /* Initial background color */
+    border-radius: 50%; /* Make it circular */
+    padding: -1rem; /* Add some padding */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add some shadow */
+}
+
+/* Hover effect styling */
+#scrollToTop:hover {
+    background-color: white; /* Background color on hover */
+}
+
+#scrollToTop:hover #progressPath {
+    stroke: black; /* Stroke color on hover */
+}
+
+#scrollToTop:hover #arrowPath {
+    stroke: black; /* Stroke color on hover */
+}
+
+</style>
+<!-- Circular SVG for scroll-to-top button and progress path -->
+<svg
+    id="scrollToTop"
+    width="40"
+    height="40"
+    viewBox="0 0 40 40"
+    style="position: fixed; bottom: 5rem; right: 5rem; z-index: 99999999999; cursor: pointer;"
+    onclick="scrollToTop()"
+>
+    <!-- Circular progress path -->
+    <circle
+        id="progressPath"
+        cx="20"
+        cy="20"
+        r="18"
+        fill="none"
+        stroke="#fff"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-dasharray="113.09733552923255"
+        stroke-dashoffset="307.919"
+        style="transition: stroke-dashoffset 10ms linear;"
+    ></circle>
+
+    <!-- Arrow up path -->
+    <path
+        id="arrowPath"
+        d="M 12 24 l 8 -8 l 8 8"
+        stroke="#fff"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"
+    ></path>
+</svg>
+
 
 <footer class="bg-black text-white h-fit">
   <div
@@ -115,18 +175,18 @@
 
 <script>
   // Get the button element
-  var scrollToTopButton = document.getElementById("scrollToTop");
+  // var scrollToTopButton = document.getElementById("scrollToTop");
   // var circlePath = document.getElementById("circlePath");
   // var windowHeight = window.innerHeight;
   // var documentHeight = document.body.scrollHeight;
 
   // Add a scroll event listener
-  window.addEventListener("scroll", function () {
-    if (window.scrollY >= 751) {
-      scrollToTopButton.style.display = "flex";
-    } else {
-      scrollToTopButton.style.display = "none";
-    }
+  // window.addEventListener("scroll", function () {
+  //   if (window.scrollY >= 751) {
+  //     scrollToTopButton.style.display = "flex";
+  //   } else {
+  //     scrollToTopButton.style.display = "none";
+  //   }
     // var scrollPercentage =
     //   (window.scrollY / (documentHeight - windowHeight)) * 100;
     // var dashOffset = 307.919 - scrollPercentage * 3.07919; // Adjust this factor for speed
@@ -135,14 +195,51 @@
     // dashOffset = Math.max(dashOffset, 0);
 
     // circlePath.style.strokeDashoffset = dashOffset;
-  });
+  // });
 
   // Function to scroll to the top when the button is clicked
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      duration: 5000,
-      behavior: "smooth",
+  // function scrollToTop() {
+  //   window.scrollTo({
+  //     top: 0,
+  //     duration: 5000,
+  //     behavior: "smooth",
+  //   });
+  // }
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the scroll-to-top SVG element
+    var scrollToTopButton = document.getElementById("scrollToTop");
+    var progressPath = document.getElementById("progressPath");
+
+    // Add a scroll event listener
+    window.addEventListener("scroll", function () {
+        // Show or hide the scroll-to-top button based on scroll position
+        if (window.scrollY >= 751) {
+            scrollToTopButton.style.display = "block";
+        } else {
+            scrollToTopButton.style.display = "none";
+        }
+
+        // Calculate the scroll progress
+        var scrollProgress = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+        
+        // Calculate dash offset
+        var dashOffset = progressPath.getTotalLength() * (1 - scrollProgress);
+        
+        // Set the stroke-dashoffset attribute based on scroll progress
+        progressPath.setAttribute("stroke-dashoffset", dashOffset);
     });
-  }
+
+    // Function to scroll to the top when the button is clicked
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    }
+
+    // Add click event listener to the scroll-to-top button (SVG)
+    scrollToTopButton.addEventListener("click", scrollToTop);
+});
+
+
 </script>
