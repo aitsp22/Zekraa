@@ -1474,17 +1474,17 @@
             "path": "home.salesAd",
             "fields": [
                 {
-                    "id": "collection",
+                    "id": "saleAds",
                     "type": "collection",
                     "format": "collection",
-                    "label": "Collection",
+                    "label": "Add Sale ad",
                     "description": null,
                     "labelHTML": null,
                     "item_label": null,
                     "icon": "sicon-list-add",
                     "fields": [
                         {
-                            "id": "collection.show_sales_ads",
+                            "id": "saleAds.show_sales_ads",
                             "type": "boolean",
                             "format": "checkbox",
                             "label": "show sales ads",
@@ -1496,7 +1496,7 @@
                             "required": false
                         },
                         {
-                            "id": "collection.ad_text",
+                            "id": "saleAds.ad_text",
                             "type": "string",
                             "format": "text",
                             "label": "Ad text",
