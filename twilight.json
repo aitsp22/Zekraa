@@ -1390,8 +1390,8 @@
                             "value": null,
                             "multilanguage": false,
                             "required": false,
-                            "minLength": 6,
-                            "maxLength": 30
+                            "minLength": "3",
+                            "maxLength": "60"
                         },
                         {
                             "id": "all_categorires.cat_title",
@@ -1405,8 +1405,8 @@
                             "value": null,
                             "multilanguage": false,
                             "required": false,
-                            "minLength": 6,
-                            "maxLength": 30
+                            "minLength": "3",
+                            "maxLength": "60"
                         }
                     ],
                     "value": [],
