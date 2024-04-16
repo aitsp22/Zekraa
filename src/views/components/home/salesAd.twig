@@ -35,10 +35,12 @@
             <li><a href="{{link('offers')}}">{{ads.ad_text}}</a></li>
             
             {% endfor %}
+
             {% for ads in component.saleAds %}
             <!-- Duplicate the list items for continuous scrolling -->
              <li><a href="{{link('offers')}}">{{ads.ad_text}}</a></li>
             {% endfor %}
+            
             {% for ads in component.saleAds %}
             <!-- Duplicate the list items for continuous scrolling -->
              <li><a href="{{link('offers')}}">{{ads.ad_text}}</a></li>
