@@ -1,21 +1,17 @@
 <section class="  relative  lg:h-auto  sm:h-[47rem] md:h-[45rem] mb-[20px]" >
   <div class="">
-    <img src="{{ component.bgImg }}" class="w-[100vw] h-[50vh]  relative" />
-
-    <div
-      class="absolute top-10 rtl:left-10 ltr:right-10 text-white w-fit justify-center items-center"
-    >
-      <a
-        href="{{ component.category[0].url }}"
-        class="no-underline w-[6rem] h-10 border border-white 
-        bg-black rounded-md bg-clip-padding backdrop-filter 
-        text-black
-        backdrop-blur-md bg-opacity-20 hover:scale-110 transition-transform 
-        duration-300 ease-in-out rounde-lg flex justify-center items-center"
-      >
+    <a
+    href="{{ component.category[0].url }}">
+ 
+    <img src="{{ component.bgImg }}" class="w-[100%]  relative" />
+  </a>
+  <div class="absolute top-10 rtl:left-10 ltr:right-10 text-white w-fit justify-center items-center lg:block md:block hidden">
+    <a href="{{ component.category[0].url }}" class="no-underline w-[6rem] h-10 border border-white bg-[#B5753E] 
+    rounded-md bg-clip-padding backdrop-filter text-white backdrop-blur-md bg-opacity-75 hover:scale-110 transition-transform duration-300 ease-in-out rounde-lg flex justify-center items-center">
       {{trans('blocks.hoome.showAll')}}
-      </a>
-    </div>
+    </a>
+  </div>
+  
   </div>
   
 
