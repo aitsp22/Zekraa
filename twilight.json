@@ -1474,6 +1474,18 @@
             "path": "home.salesAd",
             "fields": [
                 {
+                    "id": "show_sales_ads",
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "label": "show sales ads",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-check-square",
+                    "value": true,
+                    "selected": false,
+                    "required": false
+                },
+                {
                     "id": "saleAds",
                     "type": "collection",
                     "format": "collection",
@@ -1483,18 +1495,6 @@
                     "item_label": null,
                     "icon": "sicon-list-add",
                     "fields": [
-                        {
-                            "id": "saleAds.show_sales_ads",
-                            "type": "boolean",
-                            "format": "checkbox",
-                            "label": "show sales ads",
-                            "description": null,
-                            "labelHTML": null,
-                            "icon": "sicon-check-square",
-                            "value": true,
-                            "selected": false,
-                            "required": false
-                        },
                         {
                             "id": "saleAds.ad_text",
                             "type": "string",
