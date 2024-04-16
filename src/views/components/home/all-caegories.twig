@@ -19,14 +19,14 @@
 
  
   <div class="flex justify-center items-center w-full">
-<div class=" p-5 m-4 grid  sm:grid-cols-3 col-3 md:grid-cols-6 lg:grid-cols-6  justify-center">
+<div class=" p-5 m-4 grid  grid-cols-3  md:grid-cols-6  justify-center">
 {% for cat in component.all_categorires %}
 
 
 <div class="swiper-slide slide--one-sixth text-center group ms-7 "  role="group" aria-label="3 / 12">
   <a href="{{cat.cat_url}}">
   <div class="overflow-hidden rounded-full w-fit mx-auto">
-  <img class="lazy object-cover mx-auto w-40 h-40 sm-w-20 sm-h-20  rounded-full group-hover:scale-110 duration-400 loaded"  src="{{cat.cat_img}}" data-ll-status="loaded">
+  <img class="lazy object-cover mx-auto md:w-40 md:h-40  h-20 w-20    rounded-full group-hover:scale-110 duration-400 loaded"  src="{{cat.cat_img}}" data-ll-status="loaded">
   </div>
   <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-store-text-primary">{{cat.cat_title}}</h3>
   <p class="text-sm leading-6 text-store-text-secondary">{{cat.cat_suptitle}}</p>
