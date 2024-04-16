@@ -58,9 +58,6 @@
   :nth-child(1){
     @apply w-full p-0;
   }
-  :nth-child(2){
-    @apply border-blue-500;
-  }
 }
 .s-button-btn{
   padding-top: 0.5rem !important;
@@ -73,8 +70,11 @@
 .s-product-card-content{
   padding: 0 !important;
   h3,h4{
-    margin-right: 0.5rem !important;
-    margin-top: 0.3rem !important;
+    width: 100% !important;
+    // margin-right: 0.5rem !important;
+    // margin-top: 0.3rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 
@@ -95,7 +95,7 @@
   height:fit-content !important;
   padding: 0 !important;
   width: 30% !important;
-  @apply m-0 border border-green-500 h-[10rem] mx-2;
+  @apply m-0 h-[10rem] mx-2;
 }
 // Digital Rating(SVG)---------------------------
 .s-product-card-content-pie-svg-base{ 
@@ -237,7 +237,9 @@
     @apply absolute inset-0 bg-contain bg-no-repeat bg-center;
   }
 }
-
+.s-slider-nav-arrow{
+  display: none !important;
+}
 .s-toggle .s-toggle-switcher-has-text:before {
   @apply content-[attr(data-switcher-text)] font-bold text-center text-gray-400 text-xs leading-[22px];
   font-family: arial, serif;

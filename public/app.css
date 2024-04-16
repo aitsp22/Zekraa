@@ -758,6 +758,7 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .border-primary{border-color:#414042;border-color:var(--color-primary)}
 .border-white{--tw-border-opacity:1;border-color:rgba(255, 255, 255, 1);border-color:rgba(255, 255, 255, var(--tw-border-opacity))}
 .border-b-gray-200{--tw-border-opacity:1;border-bottom-color:rgba(229, 231, 235, 1);border-bottom-color:rgba(229, 231, 235, var(--tw-border-opacity))}
+.bg-\[\#B5753E\]{--tw-bg-opacity:1;background-color:rgba(181, 117, 62, 1);background-color:rgba(181, 117, 62, var(--tw-bg-opacity))}
 .bg-amber-400{--tw-bg-opacity:1;background-color:rgba(251, 191, 36, 1);background-color:rgba(251, 191, 36, var(--tw-bg-opacity))}
 .bg-black{--tw-bg-opacity:1;background-color:rgba(0, 0, 0, 1);background-color:rgba(0, 0, 0, var(--tw-bg-opacity))}
 .bg-dark{--tw-bg-opacity:1;background-color:rgba(29, 31, 31, 1);background-color:rgba(29, 31, 31, var(--tw-bg-opacity))}
@@ -768,10 +769,8 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .bg-primary{background-color:#414042;background-color:var(--color-primary)}
 .bg-red-100{--tw-bg-opacity:1;background-color:rgba(254, 226, 226, 1);background-color:rgba(254, 226, 226, var(--tw-bg-opacity))}
 .bg-white{--tw-bg-opacity:1;background-color:rgba(255, 255, 255, 1);background-color:rgba(255, 255, 255, var(--tw-bg-opacity))}
-.bg-\[\#B5753E\]{--tw-bg-opacity:1;background-color:rgba(181, 117, 62, 1);background-color:rgba(181, 117, 62, var(--tw-bg-opacity))}
 .bg-opacity-100{--tw-bg-opacity:1}
 .bg-opacity-20{--tw-bg-opacity:0.2}
-.bg-opacity-70{--tw-bg-opacity:0.7}
 .bg-opacity-75{--tw-bg-opacity:0.75}
 .bg-cover{background-size:cover}
 .bg-fixed{background-attachment:fixed}
@@ -897,7 +896,6 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .text-red-700{--tw-text-opacity:1;color:rgba(185, 28, 28, 1);color:rgba(185, 28, 28, var(--tw-text-opacity))}
 .text-red-800{--tw-text-opacity:1;color:rgba(153, 27, 27, 1);color:rgba(153, 27, 27, var(--tw-text-opacity))}
 .text-white{--tw-text-opacity:1;color:rgba(255, 255, 255, 1);color:rgba(255, 255, 255, var(--tw-text-opacity))}
-.text-\[\#B5753E\]{--tw-text-opacity:1;color:rgba(181, 117, 62, 1);color:rgba(181, 117, 62, var(--tw-text-opacity))}
 .underline{text-decoration-line:underline}
 .line-through{text-decoration-line:line-through}
 .no-underline{text-decoration-line:none}
@@ -5264,7 +5262,6 @@ input[type=radio].sr-only:checked ~ div.share-btns-list {
   width:fit-content;
 }
 .swiper-wrapper :nth-child(1){width:100%;padding:0px}
-.swiper-wrapper :nth-child(2){--tw-border-opacity:1;border-color:rgba(59, 130, 246, 1);border-color:rgba(59, 130, 246, var(--tw-border-opacity))}
 .s-button-btn {
   padding-top: 0.5rem !important;
   padding-bottom: 0.5rem !important;
@@ -5277,8 +5274,9 @@ input[type=radio].sr-only:checked ~ div.share-btns-list {
   padding: 0 !important;
 }
 .s-product-card-content h3, .s-product-card-content h4 {
-  margin-right: 0.5rem !important;
-  margin-top: 0.3rem !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 .s-product-card-entry {
   justify-content: center !important;
@@ -5306,10 +5304,6 @@ input[type=radio].sr-only:checked ~ div.share-btns-list {
   margin-left:0.5rem;
   margin-right:0.5rem;
   height:10rem;
-  border-width:1px;
-  --tw-border-opacity:1;
-  border-color:rgba(34, 197, 94, 1);
-  border-color:rgba(34, 197, 94, var(--tw-border-opacity));
 }
 .s-product-card-content-pie-svg-base {
   transition: stroke-dashoffset 1s linear;
@@ -5414,6 +5408,9 @@ input[type=radio].sr-only div.model-viewer__poster {
 }
 input[type=radio].sr-only:checked ~ div.model-viewer__poster {
   border-color: var(--color-main);
+}
+.s-slider-nav-arrow {
+  display: none !important;
 }
 .s-toggle .s-toggle-switcher-has-text:before{text-align:center;font-size:0.75rem;line-height:1rem;font-weight:700;line-height:22px;--tw-text-opacity:1;color:rgba(156, 163, 175, 1);color:rgba(156, 163, 175, var(--tw-text-opacity));--tw-content:attr(data-switcher-text);content:attr(data-switcher-text);content:var(--tw-content);
   font-family: arial, serif}
@@ -6770,9 +6767,9 @@ button.swiper-pagination-bullet {
 .lg\:grid-cols-8{grid-template-columns:repeat(8, minmax(0, 1fr))}
 .lg\:flex-row{flex-direction:row}
 .lg\:justify-between{justify-content:space-between}
+.lg\:gap-4{gap:1rem}
 .lg\:gap-6{gap:1.5rem}
 .lg\:gap-8{gap:2rem}
-.lg\:gap-4{gap:1rem}
 .lg\:space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * 0);margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * (1 - 0));margin-left:calc(2rem * (1 - var(--tw-space-x-reverse)));margin-left:calc(2rem * calc(1 - 0));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}
 .lg\:space-y-16 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(4rem * (1 - 0));margin-top:calc(4rem * (1 - var(--tw-space-y-reverse)));margin-top:calc(4rem * calc(1 - 0));margin-top:calc(4rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(4rem * 0);margin-bottom:calc(4rem * var(--tw-space-y-reverse))}
 .lg\:overflow-hidden{overflow:hidden}
