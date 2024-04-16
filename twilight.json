@@ -1482,7 +1482,7 @@
                     "labelHTML": null,
                     "icon": "sicon-check-square",
                     "value": true,
-                    "selected": false,
+                    "selected": true,
                     "required": false
                 },
                 {
@@ -1507,13 +1507,13 @@
                             "value": null,
                             "multilanguage": false,
                             "required": false,
-                            "minLength": 6,
+                            "minLength": "3",
                             "maxLength": 30
                         }
                     ],
                     "value": [],
                     "minLength": 1,
-                    "maxLength": 5
+                    "maxLength": "60"
                 }
             ]
         }
