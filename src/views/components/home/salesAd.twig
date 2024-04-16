@@ -15,7 +15,7 @@
     }
 }
 </style>
-
+{% if component.show_sales_ads == true or component.show_sales_ads == 1 %}
 <div class="z-[99999999999999999999999] fixed top-0 bg-black w-full h-[2rem]" id="ads">
   <div id="salesAd" class="relative flex justify-center items-center gap-3">
       <!-- Closing button -->
@@ -27,33 +27,27 @@
         transform="scale(0.8) translate(6.25,6.25)" d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"></path>
     </svg>
       </button>
-        <ul class="scrolling-list">
+      
+      
+      <ul class="scrolling-list">
+            {% for ads in component.saleAds %}
             <!-- Duplicate list items for seamless scrolling -->
-            <li><a href="{{link('offers')}}">تخفيضات</a></li>
-            <li><a href="{{link('offers')}}">تخفيضات</a></li>
-            <li><a href="{{link('offers')}}">تخفيضات</a></li>
-            <li><a href="{{link('offers')}}">تخفيضات</a></li>
-            <li><a href="{{link('offers')}}">تخفيضات</a></li>
-            <li><a href="{{link('offers')}}">تخفيضات</a></li>
-            <li><a href="{{link('offers')}}">تخفيضات</a></li>
-            <li><a href="{{link('offers')}}">تخفيضات</a></li>
-            <li><a href="{{link('offers')}}">تخفيضات</a></li>
-            <li><a href="{{link('offers')}}">تخفيضات</a></li>
+            <li><a href="{{link('offers')}}">{{ads.ad_text}}</a></li>
             
+            {% endfor %}
+            {% for ads in component.saleAds %}
             <!-- Duplicate the list items for continuous scrolling -->
-            <li><a href="{{link('offers')}}">تخفيضات</a></li>
-            <li><a href="{{link('offers')}}">تخفيضات</a></li>
-            <li><a href="{{link('offers')}}">تخفيضات</a></li>
-            <li><a href="{{link('offers')}}">تخفيضات</a></li>
-            <li><a href="{{link('offers')}}">تخفيضات</a></li>
-            <li><a href="{{link('offers')}}">تخفيضات</a></li>
-            <li><a href="{{link('offers')}}">تخفيضات</a></li>
-            <li><a href="{{link('offers')}}">تخفيضات</a></li>
-            <li><a href="{{link('offers')}}">تخفيضات</a></li>
-            <li><a href="{{link('offers')}}">تخفيضات</a></li>
+             <li><a href="{{link('offers')}}">{{ads.ad_text}}</a></li>
+            {% endfor %}
+            {% for ads in component.saleAds %}
+            <!-- Duplicate the list items for continuous scrolling -->
+             <li><a href="{{link('offers')}}">{{ads.ad_text}}</a></li>
+            {% endfor %}
+           
     </ul>
   </div>
 </div>
+{% endif %}
 
 <script>
 // Execute the script when the DOM is fully loaded

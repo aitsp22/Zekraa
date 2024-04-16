@@ -6688,6 +6688,7 @@ button.swiper-pagination-bullet {
 .lg\:grid{display:grid}
 .lg\:hidden{display:none}
 .lg\:h-\[9rem\]{height:9rem}
+.lg\:h-auto{height:auto}
 .lg\:w-10\/12{width:83.333333%}
 .lg\:w-24{width:6rem}
 .lg\:w-5\/12{width:41.666667%}
