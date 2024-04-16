@@ -15,7 +15,7 @@
 </div>
 </div> #}
 
-<div class="mt-16 ">
+<div class="mt-16 x {{is_rtl ? 'rtl' : 'ltr'}} ">
  <div class="flex justify-center items-center w-full"> <img src="{{component.title_image}}" alt="" class=""></div>
  
   <div class="flex justify-center items-center w-full">
@@ -23,31 +23,27 @@
 {% for cat in component.all_categorires %}
 
 
-<div class="swiper-slide slide--one-sixth text-center group ms-7 "  role="group" aria-label="3 / 12">
+<div class="swiper-slide slide--one-sixth text-center group gap-5 "  role="group" aria-label="3 / 12">
   <a href="{{cat.cat_url}}">
   <div class="overflow-hidden rounded-full w-fit mx-auto">
   <img class="lazy object-cover mx-auto md:w-40 md:h-40  h-20 w-20    rounded-full group-hover:scale-110 duration-400 loaded"  src="{{cat.cat_img}}" data-ll-status="loaded">
   </div>
   <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-store-text-primary">{{cat.cat_title}}</h3>
-  <p class="text-sm leading-6 text-store-text-secondary">{{cat.cat_suptitle}}</p>
+  <p class="text-sm hidden md:block leading-6 text-store-text-secondary">{{cat.cat_suptitle}}</p>
   </a>
   </div>
 
-{# <a href="{{cat.cat_url}}" class="flex justify-center items-center">
-  <img class="w-[150px] h-[150px] rounded-[50%] m-[10px]" src="{{cat.cat_img}}"/>
-</a> #}
+
 
 {% endfor %}
 </div>
 </div>
 </div>
 
-{# <div class="swiper-slide slide--one-sixth text-center group" role="group" aria-label="3 / 12">
-  <a href="https://salla.sa/dev-flormi3pb6t1cfo7/redirect/products/1705818376">
-  <div class="overflow-hidden rounded-full w-fit mx-auto">
-  <img class="lazy object-cover mx-auto w-40 h-40 rounded-full group-hover:scale-110 duration-400 loaded" src="https://cdn.salla.sa/form-builder/7Xg3HngS3cl7n3Hsv7qiv9AnWZs9eUFJUXAg0uR6.jpg" alt="Hair Care" loading="lazy" src="https://cdn.salla.sa/form-builder/7Xg3HngS3cl7n3Hsv7qiv9AnWZs9eUFJUXAg0uR6.jpg" data-ll-status="loaded">
-  </div>
-  <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-store-text-primary">Hair Care</h3>
-  <p class="text-sm leading-6 text-store-text-secondary">Shine with shiny hair</p>
-  </a>
-  </div> #}
+<style>
+
+.x{
+    
+    direction: ltr;
+}
+</style>
