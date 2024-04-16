@@ -771,6 +771,8 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .bg-\[\#B5753E\]{--tw-bg-opacity:1;background-color:rgba(181, 117, 62, 1);background-color:rgba(181, 117, 62, var(--tw-bg-opacity))}
 .bg-opacity-100{--tw-bg-opacity:1}
 .bg-opacity-20{--tw-bg-opacity:0.2}
+.bg-opacity-70{--tw-bg-opacity:0.7}
+.bg-opacity-75{--tw-bg-opacity:0.75}
 .bg-cover{background-size:cover}
 .bg-fixed{background-attachment:fixed}
 .bg-clip-padding{background-clip:padding-box}
