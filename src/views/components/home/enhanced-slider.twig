@@ -11,26 +11,29 @@
 <section class="s-block s-block--hero-slider s-block--full-bg wide-placeholder absolute z-40 top-0 left-0 right-0">
     <salla-slider 
       id="main-slider-{{ position }}"
-      auto-play
       show-controls="false"
       loop="true"
       slider-config="{
         &quot;effect&quot;: &quot;fade&quot;,
         &quot;slidesPerView&quot;:1,
         &quot;speed&quot;: 2000,
-        &quot;autoplay&quot;: {&quot;delay&quot;:1000},
+        {# &quot;autoplay&quot;: {&quot;delay&quot;:1000}, #}
         &quot;allowTouchMove&quot;: true
       }"
       type="fullwidth">
         <div slot="items">
             {% for slide in component.slides %}
-                <div class="swiper-slide w-[100vw] min-h-[50vh] sm:min-h-[100vh] bg-dark relative">
-					<img data-swiper-autoplay="500" src="{{slide.image}}" class=" h-[100%] sm:h-full bg-cover w-full bg-center absolute top-0 right-0 left-0"></img>
-                    
-                    <div class="flex-center container pb-16 sm:pb-0 home-slider__content relative h-full">
-                        <div class=" w-4/6 text-center md:w-7/12 lg:w-5/12 text-white">
-                            <h2 data-swiper-parallax="-500" class="lg:text-title-size font-bold leading-tight mb-4">{{ slide.title }}</h2>
-                            <p data-swiper-parallax="-300" class="line-clamp-2 description">{{ slide.description }}</p>
+            <div class="swiper-slide w-[100vw] h-auto md:min-h-[70vh] lg:min-h-[100vh] bg-dark relative">
+                <img data-swiper-autoplay="500" src="{{slide.image}}" class=" h-[100%] sm:h-full bg-cover w-full bg-center absolute top-0 right-0 left-0"></img>
+                <div class="flex-center container pb-16 sm:pb-0 home-slider__content relative h-full">
+                    <div class=" w-4/6 text-center md:w-7/12 lg:w-5/12 text-white">
+                        <h2 data-swiper-parallax="-500" class="lg:text-title-size font-bold leading-tight mb-4">{{ slide.title }}</h2>
+                        <p data-swiper-parallax="-300" class="line-clamp-2 description">{{ slide.list }}</p>
+                        <a class="z-[9999999999999999999999999999999999] bg-[#a1734b] text-white py-2 px-5 md:px-10 text-xl rounded-xl absolute left-[10%] md:left-[20%] top-[50%]" href="{{link('offers')}}">
+                            <button >
+                                إقتنيها الآن
+                            </button>
+                        </a>
                         </div>
                     </div>
                 </div>
