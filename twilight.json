@@ -243,22 +243,6 @@
                             "maxLength": 100
                         },
                         {
-                            "id": "slides.list",
-                            "type": "items",
-                            "format": "dropdown-list",
-                            "label": "Dropdown List",
-                            "description": null,
-                            "labelHTML": null,
-                            "icon": "sicon-keyboard_arrow_down",
-                            "selected": [],
-                            "options": [],
-                            "source": "Categories",
-                            "multichoice": true,
-                            "searchable": true,
-                            "required": false,
-                            "value": []
-                        },
-                        {
                             "type": "string",
                             "icon": "sicon-typography",
                             "label": "نص إضافي",
@@ -273,6 +257,22 @@
                             "maxLength": 255
                         }
                     ]
+                },
+                {
+                    "id": "list",
+                    "type": "items",
+                    "format": "dropdown-list",
+                    "label": "Dropdown List",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-keyboard_arrow_down",
+                    "selected": [],
+                    "options": [],
+                    "source": "Categories",
+                    "multichoice": true,
+                    "searchable": true,
+                    "required": false,
+                    "value": []
                 }
             ]
         },
