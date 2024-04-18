@@ -533,6 +533,9 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .my-3{margin-top:0.75rem;margin-bottom:0.75rem}
 .my-5{margin-top:1.25rem;margin-bottom:1.25rem}
 .my-\[110px\]{margin-top:110px;margin-bottom:110px}
+.my-\[0px\]{margin-top:0px;margin-bottom:0px}
+.my-\[70px\]{margin-top:70px;margin-bottom:70px}
+.my-\[60px\]{margin-top:60px;margin-bottom:60px}
 .-mb-52{margin-bottom:-13rem}
 .-mt-1{margin-top:-0.25rem}
 .-mt-62{margin-top:-248px}
@@ -6634,6 +6637,10 @@ button.swiper-pagination-bullet {
 .sm\:row-span-2{grid-row:span 2 / span 2}
 .sm\:my-4{margin-top:1rem;margin-bottom:1rem}
 .sm\:my-\[360px\]{margin-top:360px;margin-bottom:360px}
+.sm\:my-\[160px\]{margin-top:160px;margin-bottom:160px}
+.sm\:my-\[130px\]{margin-top:130px;margin-bottom:130px}
+.sm\:my-\[100px\]{margin-top:100px;margin-bottom:100px}
+.sm\:my-\[140px\]{margin-top:140px;margin-bottom:140px}
 .sm\:mb-0{margin-bottom:0px}
 .sm\:mb-24{margin-bottom:6rem}
 .sm\:mb-5{margin-bottom:1.25rem}
@@ -6673,6 +6680,10 @@ button.swiper-pagination-bullet {
 .md\:top-\[40\%\]{top:40%}
 .md\:mx-0{margin-left:0px;margin-right:0px}
 .md\:my-\[360px\]{margin-top:360px;margin-bottom:360px}
+.md\:my-\[3260px\]{margin-top:3260px;margin-bottom:3260px}
+.md\:my-\[160px\]{margin-top:160px;margin-bottom:160px}
+.md\:my-\[90px\]{margin-top:90px;margin-bottom:90px}
+.md\:my-\[100px\]{margin-top:100px;margin-bottom:100px}
 .md\:-mb-2{margin-bottom:-0.5rem}
 .md\:mb-0{margin-bottom:0px}
 .md\:mb-10{margin-bottom:2.5rem}
